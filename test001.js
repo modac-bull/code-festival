@@ -6,3 +6,20 @@ nums.filter((v, i) => {
   }
 })
 console.log(newArr)
+
+
+/* 
+1. filter 사용하여 새로운 배열에 push
+2. splice 사용하려면? 
+  - 특정 인덱스에서 값 찾고 
+*/
+
+function findNumAndPop(arr, number) {
+  return arr.splice(arr.indexOf(number),1)
+}
+
+console.log(
+  findNumAndPop(nums, 300),
+  findNumAndPop(nums, 400),
+  nums
+)
